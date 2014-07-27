@@ -1,1 +1,0 @@
-/home/noel/Dropbox/configs/.vimrc

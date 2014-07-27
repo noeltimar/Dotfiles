@@ -60,7 +60,7 @@ alias snap='scrot -cd 5 -q 100'
 
 # for ls
 alias ls='ls --color=auto'
-alias ll='ls -l'
+alias ll='ls -l --color=auto'
 
 # for pacman
 #alias update="sudo pacman -Sy --color always"
