@@ -1,0 +1,195 @@
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+Xcursor.theme: DMZ-White
+
+URxvt.geometry: 80x22
+URxvt.scrollBar: false
+URxvt.iconFile: /usr/share/icons/Faenza/apps/24/terminal.png
+
+
+URxvt*letterSpace : -1
+URxvt.font: xft:Monospace:size=10
+URxvt.boldFont: xft:Monospace:size=10
+
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      firefox
+URxvt.matcher.button:   1
+
+URxvt.keysym.Control-Up:   \033[1;5A
+URxvt.keysym.Control-Down:    \033[1;5B
+URxvt.keysym.Control-Left:    \033[1;5D
+URxvt.keysym.Control-Right:    \033[1;5C
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
+
+! Barrage
+
+*foreground: #c1c4bc
+*background: #1a1a1a
+!black
+*color0: #3a3a3a
+*color1: #8c5b3e
+!red
+*color2: #80764d
+*color3: #917154
+!green
+*color4: #596875
+*color5: #6e464b
+!yellow
+*color6: #495e61
+*color7: #bcbcaf
+!blue
+*color8: #505050
+*color9: #9f6744
+!magenta
+*color10: #80785a
+*color11: #917963
+!cyan
+*color12: #656d75
+*color13: #6e5155
+!white
+*color14: #525F61
+*color15: #c1c4bc
+
+!muddy
+
+!*background:#35272a
+!*foreground:#c0b18b
+!
+!black
+!*color0:#35272a
+!*color8:#35272a
+
+!red
+!*color1:#d17b49
+!*color9:#d17b49
+
+!green
+!*color2:#6d715e
+!*color10:#6d715e
+
+!yellow
+!*color3:#7b8748
+!*color11:#7b8748
+
+!blue
+!*color4:#775759
+!*color12:#775759
+
+!magenta
+!*color5:#af865a
+!*color13:#af865a
+
+!cyan
+!*color6:#606392
+!*color14:#606392
+
+!white
+!*color7:#c0b18b
+!*color15:#c0b18b
+
+!bitmute
+!*color0:  #282828
+!*color8:  #494949
+!red
+!*color1:  #b76969
+!*color9:  #b87e7e
+!green
+!*color2:  #719d72
+!*color10: #839d84
+!yellow
+!*color3:  #909858
+!*color11: #919864
+!blue
+!*color4:  #68668f
+!*color12: #73718f
+!magenta
+!*color5:  #966894
+!*color13: #987397
+!cyan
+!*color6:  #688891
+!*color14: #758c93
+!white
+!*color7:  #8e8e8e
+!*color15: #aeaeae
+
+!*background: #1C1C1C
+!*foreground: #F1F1F1
+
+! I Can't Believe It's not Butter!
+
+!*cursorColor:                         #917154
+!*foreground:                          #eddcd3
+!*background:                          #181512
+
+! Black                               Black !
+!*color0:                              #252525
+!*color8:                              #454545
+! Red                                 Red   !
+!*color1:                              #CD546C
+!*color9:                              #EF545F
+! Green                               Green !
+!*color2:                              #A5AF86
+!*color10:                             #BDC79E
+! Yellow                              Yellow!
+!*color3:                              #CD7860
+!*color11:                             #E88773
+! Blue                                Blue  !
+!*color4:                              #7A9388
+!*color12:                             #94B1A3
+! Magenta                             Magenta
+!*color5:                              #917154
+!*color13:                             #989584
+! Cyan                                Cyan  !
+!*color6:                              #767D75
+!*color14:                             #9DA69E
+! White                               White !
+!*color7:                              #C2C2A8
+!*color15:                             #DBDAC1
+
+! Tomorrow night color scheme mod
+!*foreground: #c5c8c6
+!*background: #1d1f21
+!*cursorColor: #aeafad
+!*color0: #000000
+!*color1: #A80032
+!*color2: #60A100
+!*color3: #D78138
+!*color4: #352E94
+!*color5: #A348C3
+!*color6: #2b6651
+!*color7: #929593
+!*color8: #666666
+!*color9: #cc6666
+!*color10: #b5bd68
+!*color11: #f0c674
+!*color12: #81a2be
+!*color13: #b294bb
+!*color14: #8abeb7
+!*color15: #ecebec
+
+! Mustang color scheme
+!*background:#1a1a1a
+!*foreground:#fff
+!*color0:#000000
+!*color1:#ff6565
+!*color2:#93d44f
+!*color3:#eab93d
+!*color4:#204a87
+!*color5:#ce5c00
+!*color6:#89b6e2
+!*color7:#cccccc
+!*color8:#555753
+!*color9:#ff8d8d
+!*color10:#c8e7a8
+!*color11:#ffc123
+!*color12:#3465a4
+!*color13:#f57900
+!*color14:#46a4ff
+!*color15:#ffffff
+
