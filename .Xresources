@@ -9,7 +9,7 @@ Xcursor.theme: DMZ-White
 
 URxvt.geometry: 80x22
 URxvt.scrollBar: false
-URxvt.iconFile: /usr/share/icons/Faenza/apps/24/terminal.png
+URxvt.iconFile: /usr/share/icons/Numix-Circle/48x48/apps/terminal.svg
 
 
 URxvt*letterSpace : -1
@@ -27,169 +27,99 @@ URxvt.keysym.Control-Right:    \033[1;5C
 URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 
-! Barrage
+!!! jellybeans colors
+!! 8 8 8
+! *background: #080808
+!! 128 128 128
+! *foreground: #808080
+!! black
+!! 26 26 26
+!*color0:  #1a1a1a
+!! 64 64 64
+!*color8:  #404040
+!! red
+!! 215 95 95
+!*color1:  #d75f5f
+!! 234 132 132
+!*color9:  #EA8484
+!! green
+!! 135 175 95
+!*color2:  #87af5f
+!! 199 240 159
+!*color10: #C7F09F
+!! yellow
+!! 255 175 95
+!*color3:  #ffaf5f
+!! 255 204 154
+!*color11: #FFCC9A
+!! blue
+!! 135 175 215
+!*color4:  #87afd7
+!! 165 202 239
+!*color12: #a5caef
+!! magenta
+!! 135 135 175
+!*color5:  #8787af
+!! 166 166 222
+!*color13: #A6A6DE
+!! cyan
+!! 95 135 135
+!*color6:  #5f8787
+!! 105 178 178
+!*color14: #69b2b2
+!! white
+!! 128 128 128
+!*color7:  #808080
+!! 215 215 215
+!*color15: #d7d7d7
 
-*foreground: #c1c4bc
-*background: #1a1a1a
-!black
-*color0: #3a3a3a
-*color1: #8c5b3e
-!red
-*color2: #80764d
-*color3: #917154
-!green
-*color4: #596875
-*color5: #6e464b
-!yellow
-*color6: #495e61
-*color7: #bcbcaf
-!blue
-*color8: #505050
-*color9: #9f6744
-!magenta
-*color10: #80785a
-*color11: #917963
-!cyan
-*color12: #656d75
-*color13: #6e5155
-!white
-*color14: #525F61
-*color15: #c1c4bc
+!! euphrasia v2 by bohoomil
 
-!muddy
+! euphrasia fg/bg
+URxvt*background:  #090C19
+URxvt*foreground:  #E6E6E6
+*cursorColor:      #1AAA13
 
-!*background:#35272a
-!*foreground:#c0b18b
-!
-!black
-!*color0:#35272a
-!*color8:#35272a
+! X.org apps bg/fg
+*background: #D0CECB
+*foreground: #090C19
 
-!red
-!*color1:#d17b49
-!*color9:#d17b49
+! black
+*color0:  #222946
+! dark grey
+*color8:  #8C8B89
 
-!green
-!*color2:#6d715e
-!*color10:#6d715e
+! red
+*color1:  #B32323
+! bright red
+*color9:  #DC2C2C
 
-!yellow
-!*color3:#7b8748
-!*color11:#7b8748
+! green
+*color2:  #1AAA13
+! bright green
+*color10: #5DCE33
 
-!blue
-!*color4:#775759
-!*color12:#775759
+! yellow
+*color3:  #FF9F3E
+! bright yellow
+*color11: #E6CB29
 
-!magenta
-!*color5:#af865a
-!*color13:#af865a
+! blue
+*color4:  #4957F3
+! bright blue
+*color12: #4D79FF
 
-!cyan
-!*color6:#606392
-!*color14:#606392
+! magenta
+*color5:	#BF3E94
+! bright magenta
+*color13:	#B641CC
 
-!white
-!*color7:#c0b18b
-!*color15:#c0b18b
+! cyan
+*color6:  #09A5B3
+! bright cyan
+*color14: #3CB6F3
 
-!bitmute
-!*color0:  #282828
-!*color8:  #494949
-!red
-!*color1:  #b76969
-!*color9:  #b87e7e
-!green
-!*color2:  #719d72
-!*color10: #839d84
-!yellow
-!*color3:  #909858
-!*color11: #919864
-!blue
-!*color4:  #68668f
-!*color12: #73718f
-!magenta
-!*color5:  #966894
-!*color13: #987397
-!cyan
-!*color6:  #688891
-!*color14: #758c93
-!white
-!*color7:  #8e8e8e
-!*color15: #aeaeae
-
-!*background: #1C1C1C
-!*foreground: #F1F1F1
-
-! I Can't Believe It's not Butter!
-
-!*cursorColor:                         #917154
-!*foreground:                          #eddcd3
-!*background:                          #181512
-
-! Black                               Black !
-!*color0:                              #252525
-!*color8:                              #454545
-! Red                                 Red   !
-!*color1:                              #CD546C
-!*color9:                              #EF545F
-! Green                               Green !
-!*color2:                              #A5AF86
-!*color10:                             #BDC79E
-! Yellow                              Yellow!
-!*color3:                              #CD7860
-!*color11:                             #E88773
-! Blue                                Blue  !
-!*color4:                              #7A9388
-!*color12:                             #94B1A3
-! Magenta                             Magenta
-!*color5:                              #917154
-!*color13:                             #989584
-! Cyan                                Cyan  !
-!*color6:                              #767D75
-!*color14:                             #9DA69E
-! White                               White !
-!*color7:                              #C2C2A8
-!*color15:                             #DBDAC1
-
-! Tomorrow night color scheme mod
-!*foreground: #c5c8c6
-!*background: #1d1f21
-!*cursorColor: #aeafad
-!*color0: #000000
-!*color1: #A80032
-!*color2: #60A100
-!*color3: #D78138
-!*color4: #352E94
-!*color5: #A348C3
-!*color6: #2b6651
-!*color7: #929593
-!*color8: #666666
-!*color9: #cc6666
-!*color10: #b5bd68
-!*color11: #f0c674
-!*color12: #81a2be
-!*color13: #b294bb
-!*color14: #8abeb7
-!*color15: #ecebec
-
-! Mustang color scheme
-!*background:#1a1a1a
-!*foreground:#fff
-!*color0:#000000
-!*color1:#ff6565
-!*color2:#93d44f
-!*color3:#eab93d
-!*color4:#204a87
-!*color5:#ce5c00
-!*color6:#89b6e2
-!*color7:#cccccc
-!*color8:#555753
-!*color9:#ff8d8d
-!*color10:#c8e7a8
-!*color11:#ffc123
-!*color12:#3465a4
-!*color13:#f57900
-!*color14:#46a4ff
-!*color15:#ffffff
-
+! light grey
+*color7:  #AEAEAE
+! white
+*color15: #DBDDE4

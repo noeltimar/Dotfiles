@@ -19,7 +19,7 @@ set guifont=Terminus\ 9
 "set background=dark
 let g:hybrid_use_Xresources = 1
 " Set color scheme
-colorscheme hybrid
+colorscheme euphrasia
 
 " WHITESPACE
 

@@ -69,15 +69,20 @@ alias ll='ls -l --color=auto'
 #alias remove="sudo pacman -R --color always"
 #alias search="pacman -Ss --color always"
 
-# for apt-get
+# for apt-get and aptitude
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias dist-upgrade='sudo apt-get dist-upgrade'
 alias install='sudo apt-get install'
-alias search='aptitude search'
 alias remove='sudo apt-get remove'
 alias purge='sudo apt-get purge'
 alias autoremove='sudo apt-get autoremove'
+alias search='aptitude search'
+alias show='aptitude show'
+
+#for Openbox
+alias obrs='openbox --restart'
+alias obrc='openbox --reconfigure'
 
 # for config files
 alias bspwmcfg='vim ~/.config/bspwm/bspwmrc'
