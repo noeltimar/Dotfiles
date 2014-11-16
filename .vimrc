@@ -1,57 +1,71 @@
 " Enable Pathogen
 execute pathogen#infect()
 
-" LOOKS
+" Looks
+set t_Co=256                      
+set background=dark
+"let g:hybrid_use_Xresources = 1
+colorscheme icantbelieveitsnotbutter
+"set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
 
-" Load file type plugins and indentation
+" Set utf-8 encoding
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf-8
+
+" Indentation
 filetype plugin indent on         
+set autoindent
+set smartindent
+
 " Enable syntax highlighting
 syntax enable                     
-" Highlight current line
-"set cursorline
-" Enable line numbers
+set showmatch
+
+" Highlight current line, line numbers, scrolling, backspace and tab settings
+set cursorline
 set number                        
-" Set terminal to 256 color
-set t_Co=256                      
-" Set GUI font
-set guifont=Terminus\ 9           
-" Set background
-"set background=dark
-let g:hybrid_use_Xresources = 1
-" Set color scheme
-colorscheme euphrasia
-
-" WHITESPACE
-
-" Set tab to 4 spaces
-set tabstop=4 shiftwidth=4        
-" Use spaces instead of tabs
-set expandtab
-" Backspace through everything in insert mode
+set relativenumber                        
+set tabstop=4 
+set softtabstop=4
+set shiftwidth=4        
 set backspace=indent,eol,start     
+set scrolloff=5
 
-" SEARCHING
+" Other behavior settings
+"set showcmd
+set showmode
+set wildmenu
+set wildmode=list:longest,full
+set wrap
+set ttyfast
+set splitbelow
+set splitright
+au FocusLost * :wa
 
-" Highligh matches
+" Statusline
+set laststatus=2
+set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%
+
+" Searching
 set hlsearch                      
-" Incremental searching
 set incsearch                     
-" Searches are case insensitive
 set ignorecase                    
-" if they don't contain any capital letters
 set smartcase                     
 
 " What's this?
 " au BufWinLeave * mkview
 " au BufWinEnter * silent loadview
 
-"Split pane settings
+" KEYBINDINGS
+
+" Split pane settings
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-set splitbelow
-set splitright
-
-"Disable autocomment
-set pastetoggle=
+" Open NERDTree
+map <C-n> :NERDTreeToggle<CR>
+" Navigate wrapped lines
+nnoremap j gj
+nnoremap k gk
