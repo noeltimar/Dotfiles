@@ -22,7 +22,8 @@ BWHT="\[\033[47m\]" # background white
 
 # Prompt
 #PS1="$HC$FBLK[$FBLE\u$FBLK]$FBLK$FBLK[$FBLE\w$FBLK]\$$FBLK$RS "
-PS1="$HC$FBLK┌─╼$FBLK[$FBLE\u$FBLK]$FBLK╾─╼$FBLK[$FBLE\w$FBLK]$FBLK\n└─╼$RS "
+#PS1="$HC$FBLK┌─╼$FBLK[$FBLE\u$FBLK]$FBLK╾─╼$FBLK[$FBLE\w$FBLK]$FBLK\n└─╼$RS "
+PS1="$FGRN\w $FRED» $RS"
 
 # Don't put duplicate lines in the history and don't overwrite GNU Midnight Commander's setting of `ignorespace'.
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
@@ -95,6 +96,7 @@ alias vimcfg='vim ~/.vimrc'
 alias bashcfg='vim ~/.bashrc'
 alias tmuxcfg='vim ~/.tmux.conf'
 alias resourcecfg='vim ~/.Xresources'
+alias merge='xrdb -merge ~/.Xresources && xrdb -load ~/.Xresources'
 alias comptoncfg='vim ~/.compton.conf'
 
 # for phone mounting (android)
