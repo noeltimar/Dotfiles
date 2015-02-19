@@ -1,0 +1,64 @@
+out_to_x no
+own_window yes
+out_to_console yes
+background no
+max_text_width 0
+double_buffer no
+
+# Update interval in seconds
+update_interval 1
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Shortens units to a single character (kiB->k, GiB->G, etc.). Default is off.
+short_units yes
+
+# How strict should if_up be when testing an interface for being up?
+# The value is one of up, link or address, to check for the interface
+# being solely up, being up and having link or being up, having link
+# and an assigned IP address. 
+if_up_strictness address
+
+# Add spaces to keep things from moving about?  This only affects certain objects.
+# use_spacer should have an argument of left, right, or none
+use_spacer left
+
+# Force UTF8? note that UTF8 support required XFT
+override_utf8_locale no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
+cpu_avg_samples 4
+#  { "full_text" : "${if_running mocp}//$endif" , "color" : "\#404040" },
+#  {"full_text" : "Wi-Fi: ${wireless_essid wlp2s0}" , "color" :"\#5f8787" }, 
+
+# Stuff after 'TEXT' will be formatted on screen
+TEXT
+
+# JSON for i3bar
+
+ [{ "name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/note.xbm","icon_color":"\#93C724", \
+	 "full_text" : "${if_running mpd}${exec mpc | head -1 | sed 's/^volume: [0-9]*%.*/not playing/'}$endif" , "color" : "\#CFCFD9" },
+
+#vol
+  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/spkr_01.xbm","icon_color":"\#F04758", \
+  "full_text" : "${exec amixer sget Master | grep -e 'Front Left:' | sed 's/[^\[]*\[\([0-9]\{1,3\}%\).*\(on\|off\).*/\2 \1/' | sed 's/off/Muted/' | sed 's/on //'}" , "color" :"\#CFCFD9" },
+
+#bat
+  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/bat_full_02.xbm","icon_color":"\#DDB62B", \
+  "full_text" : "${battery}" , "color" :"\#CFCFD9" }, 
+
+#cpu
+  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/cpu.xbm","icon_color":"\#45A3E6", \
+  "full_text" : "${cpu}%" , "color" :"\#CFCFD9" },
+
+#mem
+  {"name": "ram", "icon":"/home/noel/Pictures/dzen-icons/mem.xbm","icon_color":"\#C953EF", \
+  "full_text" : "${mem}" , "color" :"\#CFCFD9" },
+
+#time
+  {"name": "time", "icon":"/home/noel/Pictures/dzen-icons/clock.xbm","icon_color":"\#60C6C8", \
+  "color": "\#CFCFD9","full_text": "${time %H:%M}","separator": false}],
+
