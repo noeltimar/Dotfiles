@@ -4,9 +4,10 @@ execute pathogen#infect()
 " Looks
 set t_Co=256                      
 set background=dark
-"let g:hybrid_use_Xresources = 1
-colorscheme icantbelieveitsnotbutter
-"set list listchars=tab:❘-,trail:·,extends:»,precedes:«,nbsp:×
+let g:hybrid_use_Xresources = 1
+let g:rehash256 = 1
+set ttimeoutlen=50
+colorscheme euphrasia
 
 " Set utf-8 encoding
 set enc=utf-8
@@ -25,7 +26,7 @@ set showmatch
 " Highlight current line, line numbers, scrolling, backspace and tab settings
 set cursorline
 set number                        
-set relativenumber                        
+"set relativenumber                        
 set tabstop=4 
 set softtabstop=4
 set shiftwidth=4        
@@ -33,7 +34,7 @@ set backspace=indent,eol,start
 set scrolloff=5
 
 " Other behavior settings
-"set showcmd
+set showcmd
 set showmode
 set wildmenu
 set wildmode=list:longest,full
@@ -41,10 +42,9 @@ set wrap
 set ttyfast
 set splitbelow
 set splitright
-au FocusLost * :wa
 
 " Statusline
-set laststatus=2
+set laststatus=0
 set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%
 
 " Searching
@@ -66,6 +66,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " Open NERDTree
 map <C-n> :NERDTreeToggle<CR>
-" Navigate wrapped lines
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" Navigate wrapped lines;
 nnoremap j gj
 nnoremap k gk
