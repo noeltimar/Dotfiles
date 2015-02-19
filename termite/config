@@ -1,0 +1,93 @@
+[options]
+font = terminus 8
+allow_bold = false
+
+[colors]
+
+#euphrasia mod
+foreground =    #CFCFD9
+background =    #0A0D14
+
+# black
+color0 =   #192033
+color8 =   #344169
+# red
+color1  =  #F04758
+color9  =  #FF7684
+# green
+color2 =  #93C724
+color10 =  #B3F22C
+# yellow
+color3 =  #DDB62B
+color11 =  #FFD646
+# blue
+color4 =  #45A3E6
+color12 =  #66BFFF
+# magenta
+color5 =  #C953EF
+color13 =  #DD74FF
+# cyan
+color6 =  #60C6C8
+color14 = #69D9DB
+# white
+color7 =   #CFCFD9
+color15 =	#CFCFD9
+
+
+##euphrasia
+#foreground =    #CFCFD9
+#background =    #0A0D14
+#
+## black
+#color0 =   #192033
+#color8 =   #666666
+## red
+#color1  =  #A62A3E
+#color9  =  #F04758
+## green
+#color2  =  #38912B
+#color10 =  #93C724
+## yellow
+#color3  =  #B27D12
+#color11 =  #DDB62B
+## blue
+#color4  =  #355C9A
+#color12 =  #45A3E6
+## magenta
+#color5  =  #7C4F9F
+#color13 =  #C953EF
+## cyan
+#color6  =  #258F8F
+#color14 =  #60C6C8
+## white
+#color7 =   #77858C
+#color15 =   #C0C0C0
+
+## gotham
+#foreground =   #98d1ce
+#background =   #0a0f14
+#cursor =  #98d1ce
+#
+#color0 =       #0a0f14
+#color8 =       #10151b
+#
+#color1 =       #c33027
+#color9 =       #d26939
+#
+#color2 =       #26a98b
+#color10 =      #081f2d
+#
+#color3 =      #edb54b
+#color11 =      #245361
+#
+#color4 =      #195465
+#color12 =      #093748
+#
+#color5 =      #4e5165
+#color13 =      #888ba5
+#
+#color6 =      #33859d
+#color14 =      #599caa
+#
+#color7 =      #98d1ce
+#color15 =      #d3ebe9
