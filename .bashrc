@@ -23,7 +23,7 @@ BWHT="\[\033[47m\]" # background white
 # Prompt
 #PS1="$HC$FBLK[$FBLE\u$FBLK]$FBLK$FBLK[$FBLE\w$FBLK]\$$FBLK$RS "
 #PS1="$HC$FBLK┌─╼$FBLK[$FBLE\u$FBLK]$FBLK╾─╼$FBLK[$FBLE\w$FBLK]$FBLK\n└─╼$RS "
-PS1="$FGRN\w $FRED» $RS"
+PS1="$HC$FBLE\w $FMAG» $RS"
 
 # Don't put duplicate lines in the history and don't overwrite GNU Midnight Commander's setting of `ignorespace'.
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
@@ -52,9 +52,9 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # ALIASES
 
 # for shutdown and restart
-alias sd="sudo shutdown -h now"
-alias sd1="sleep 1h && sudo shutdown -h now"
-alias rs="sudo shutdown -r now"
+#alias sd="sudo shutdown -h now"
+#alias sd1="sleep 1h && sudo shutdown -h now"
+#alias rs="sudo shutdown -r now"
 
 # for scrot
 alias snap='scrot -cd 5 -q 100'
@@ -64,26 +64,38 @@ alias ls='ls --color=auto'
 alias ll='ls -l --color=auto'
 
 # for pacman
-#alias update="sudo pacman -Sy --color always"
-#alias upgrade="sudo pacman -Su --color always"
-#alias install="sudo pacman -S --color always"
-#alias remove="sudo pacman -R --color always"
-#alias search="pacman -Ss --color always"
+alias update="sudo pacman -Sy --color always"
+alias upgrade="sudo pacman -Su --color always"
+alias dist-upgrade="sudo pacman -Syu --color always"
+alias install="sudo pacman -S --color always"
+alias remove="sudo pacman -R --color always"
+alias search="pacman -Ss --color always"
 
 # for apt-get and aptitude
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get upgrade'
-alias dist-upgrade='sudo apt-get dist-upgrade'
-alias install='sudo apt-get install'
-alias remove='sudo apt-get remove'
-alias purge='sudo apt-get purge'
-alias autoremove='sudo apt-get autoremove'
-alias search='aptitude search'
-alias show='aptitude show'
+#alias update='sudo apt-get update'
+#alias upgrade='sudo apt-get upgrade'
+#alias dist-upgrade='sudo apt-get dist-upgrade'
+#alias install='sudo apt-get install'
+#alias remove='sudo apt-get remove'
+#alias purge='sudo apt-get purge'
+#alias autoremove='sudo apt-get autoremove'
+#alias search='aptitude search'
+#alias show='aptitude show'
+
+# for yum
+#alias update='sudo yum update'
+#alias search='yum search'
+#alias install='sudo yum install'
+#alias remove='sudo yum remove'
+#alias autoremove='sudo yum autoremove'
 
 #for Openbox
 alias obrs='openbox --restart'
 alias obrc='openbox --reconfigure'
+
+# quick access
+alias cdcpp='cd ~/VTS/OOP/C++/'
+alias cdsapps='cd ~/.steam/steam/steamapps/common/'
 
 # for config files
 alias bspwmcfg='vim ~/.config/bspwm/bspwmrc'
@@ -98,10 +110,37 @@ alias tmuxcfg='vim ~/.tmux.conf'
 alias resourcecfg='vim ~/.Xresources'
 alias merge='xrdb -merge ~/.Xresources && xrdb -load ~/.Xresources'
 alias comptoncfg='vim ~/.compton.conf'
+alias i3cfg='vim ~/.i3/config'
+alias termitecfg='vim ~/.config/termite/config'
 
 # for phone mounting (android)
-alias android-connect='mtpfs -o allow_other /mnt/phone'
-alias android-disconnect='fusermount -u /mnt/phone'
+#alias android-connect='mtpfs -o allow_other /mnt/phone'
+#alias android-disconnect='fusermount -u /mnt/phone'
 
 # for tmux attaching
 alias ta='tmux attach'
+
+# for starting and stopping services
+alias starthamachi='sudo systemctl start logmein-hamachi'
+alias stophamachi='sudo systemctl stop logmein-hamachi'
+alias restarthamachi='sudo systemctl restart logmein-hamachi'
+
+alias starthttpd='sudo systemctl start httpd.service'
+alias stophttpd='sudo systemctl stop httpd.service'
+alias restarthttpd='sudo systemctl restart httpd.service'
+
+alias startmysql='sudo systemctl start mysqld.service'
+alias stopmysql='sudo systemctl stop mysqld.service'
+alias restartmysql='sudo systemctl restart mysqld.service'
+
+# for g++
+alias g++='g++ -fdiagnostics-color=always'
+
+# battery info
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
+
+# music
+alias music='mpd && mpdscribble && ncmpcpp'
+
+# cpu temp monitoring
+alias heat='watch -n 1 -d sensors'
