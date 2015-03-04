@@ -39,26 +39,44 @@ TEXT
 
 # JSON for i3bar
 
- [{ "name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/note.xbm","icon_color":"\#93C724", \
-	 "full_text" : "${if_running mpd}${exec mpc | head -1 | sed 's/^volume: [0-9]*%.*/not playing/'}$endif" , "color" : "\#CFCFD9" },
+##music
+# [{	 "full_text" : "${if_running mpd}", "color" : "\#CFCFD9" },
+# {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/note.xbm","icon_color":"\#93C724", \
+# "full_text" : "${exec mpc current}$endif" , "color" : "\#CFCFD9" },
+#
+##vol
+#  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/spkr_01.xbm","icon_color":"\#F04758", \
+#  "full_text" : "${exec amixer sget Master | grep -e 'Front Left:' | sed 's/[^\[]*\[\([0-9]\{1,3\}%\).*\(on\|off\).*/\2 \1/' | sed 's/off/Muted/' | sed 's/on //'}" , "color" :"\#CFCFD9" },
+#
+##bat
+#  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/bat_full_02.xbm","icon_color":"\#DDB62B", \
+#  "full_text" : "${battery}" , "color" :"\#CFCFD9" }, 
+#
+##cpu
+#  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/cpu.xbm","icon_color":"\#45A3E6", \
+#  "full_text" : "${cpu}%" , "color" :"\#CFCFD9" },
+#
+##mem
+#  {"name": "ram", "icon":"/home/noel/Pictures/dzen-icons/mem.xbm","icon_color":"\#C953EF", \
+#  "full_text" : "${mem}" , "color" :"\#CFCFD9" },
+#
+##time
+#  {"name": "time", "icon":"/home/noel/Pictures/dzen-icons/clock.xbm","icon_color":"\#60C6C8", \
+#  "color": "\#CFCFD9","full_text": "${time %H:%M}","separator": false}],
 
-#vol
-  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/spkr_01.xbm","icon_color":"\#F04758", \
-  "full_text" : "${exec amixer sget Master | grep -e 'Front Left:' | sed 's/[^\[]*\[\([0-9]\{1,3\}%\).*\(on\|off\).*/\2 \1/' | sed 's/off/Muted/' | sed 's/on //'}" , "color" :"\#CFCFD9" },
+#music
+ [{	 "full_text" : "${if_mpd_playing}music", "color" : "\#344169" },
+ {"full_text" : "${mpd_smart}$endif" , "color" : "\#CFCFD9" },
+
+##vol
+  {"full_text" : "vol", "color" : "\#344169" },
+  {"full_text" : "${exec amixer sget Master | grep -e 'Front Left:' | sed 's/[^\[]*\[\([0-9]\{1,3\}%\).*\(on\|off\).*/\2 \1/' | sed 's/off/Muted/' | sed 's/on //'}" , "color" :"\#CFCFD9" },
 
 #bat
-  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/bat_full_02.xbm","icon_color":"\#DDB62B", \
-  "full_text" : "${battery}" , "color" :"\#CFCFD9" }, 
-
-#cpu
-  {"name": "cpu", "icon":"/home/noel/Pictures/dzen-icons/cpu.xbm","icon_color":"\#45A3E6", \
-  "full_text" : "${cpu}%" , "color" :"\#CFCFD9" },
-
-#mem
-  {"name": "ram", "icon":"/home/noel/Pictures/dzen-icons/mem.xbm","icon_color":"\#C953EF", \
-  "full_text" : "${mem}" , "color" :"\#CFCFD9" },
+  {"full_text" : "bat", "color" : "\#344169" },
+  {"full_text" : "${battery}", "color" :"\#CFCFD9" }, 
 
 #time
-  {"name": "time", "icon":"/home/noel/Pictures/dzen-icons/clock.xbm","icon_color":"\#60C6C8", \
-  "color": "\#CFCFD9","full_text": "${time %H:%M}","separator": false}],
+  {"full_text" : "time", "color" : "\#344169" },
+  {"color": "\#CFCFD9","full_text": "${time %H:%M}","separator": false}],
 
